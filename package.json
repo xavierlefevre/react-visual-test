@@ -4,13 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "chromatic": "CHROMATIC_APP_CODE=nflwpd91gd chromatic test"
   },
   "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@storybook/addon-knobs": "^4.0.10",
     "@storybook/react": "^4.0.9",
     "babel-loader": "^8.0.4",
-    "storybook-chromatic": "^1.2.0",
-    "@babel/core": "^7.1.6"
+    "storybook-chromatic": "^1.2.0"
   },
   "dependencies": {
     "react": "^16.6.3",
